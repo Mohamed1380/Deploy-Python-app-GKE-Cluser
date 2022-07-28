@@ -16,14 +16,14 @@ docker push gcr.io/abdelhadyfinal/redis
 1. Make backend configuration using GCP Bucket
 2. Create VPC
 * subnets (management subnet & restricted subnet)
-1. Management subnet has the (NAT gateway , Private vm)
-2. Restricted subnet has the (Private standard GKE cluster (private control plan))
+* Management subnet has the (NAT gateway , Private vm)
+* Restricted subnet has the (Private standard GKE cluster (private control plan))
 Notes:
-3. Restricted subnet must not have access to internet
-4. All images deployed on GKE must come from GCR or Artifacts registry.
-5. The VM must be private.
-6. Deployment must be exposed to public internet with a public HTTP load balancer.
-7. All infra is to be created on GCP using terraform.
+1. Restricted subnet must not have access to internet
+2. All images deployed on GKE must come from GCR or Artifacts registry.
+3. The VM must be private.
+4. Deployment must be exposed to public internet with a public HTTP load balancer.
+5. All infra is to be created on GCP using terraform.
 6. Deployment on GKE can be done by terraform or manually by kubectl tool.
 7. Don’t use default compute service account while creating the gke cluster, create
 custom SA and attach it to your nodes.
