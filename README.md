@@ -1,5 +1,5 @@
 # Provision Private GKE cluster and Bastion Host on GCP Using Terraform
-#### Deploy Python Application [Project link] (https://github.com/atefhares/DevOps-Challenge-Demo-Code)
+#### Deploy Python Application ![Project link] (https://github.com/atefhares/DevOps-Challenge-Demo-Code)
 1. Docrize python web application using docker 
 2. Pull redis image from docker Hub 
 3. push 2 image to gcr on GCP
@@ -53,7 +53,7 @@ kubectl
 
 ## Deploy Kuberentes Files
 ```
-kubectl create -fR ./kubernetes
+kubectl apply -fR ./kubernetes
 ```
 ```
 kubectl get ingress
